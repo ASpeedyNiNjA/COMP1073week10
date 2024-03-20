@@ -16,6 +16,28 @@
       "image" : "chocolate-mint.svg"
     },
     {
+      "name" : "Watery Watermelon",
+      "calories" : 200,
+      "type" : "sherbert",
+      "ingredients" : [
+        "watermelon exract",
+        "sprinkles",
+        "pink colouring"
+      ],
+      "image" : "ice-cream-xtra1.svg"
+    },
+    {
+      "name" : "Sourlip Grape",
+      "calories" : 1000,
+      "type" : "ice cream",
+      "ingredients" : [
+        "Grape",
+        "Sour Patch Kids",
+        "sprinkles"
+      ],
+      "image" : "ice-cream-xtra2.svg"
+    },
+    {
       "name" : "Perfect Peach Mango",
       "calories" : 350,
       "type" : "sorbet",
