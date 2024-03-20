@@ -6,7 +6,7 @@ const section = document.querySelector("section");
 async function populate() {
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
-    const requestURL = "file:///C:/Users/chris/Downloads/lesson-10/js/i-scream.json"
+    const requestURL = "https://aspeedyninja.github.io/COMP1073week10/js/i-scream.json"
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL); 
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
@@ -46,10 +46,12 @@ function showTopFlavors(jsonObj) {
         let h2 = document.createElement("h2");
         let image = document.createElement("img");
         let ul = document.createElement("ul");
+        let p = document.createElement("p");
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i]["name"];
         image.setAttribute("src", `images/${topFlavors[i]["image"]}`);
+        p.textContent = "Calories: " +  topFlavors[i]["calories"];
         //console.log(image);
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
@@ -65,6 +67,7 @@ function showTopFlavors(jsonObj) {
         article.appendChild(h2);
         article.appendChild(image);
         article.appendChild(ul);
+        article.appendChild(p);
         console.log(article);
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
         section.appendChild(article);
